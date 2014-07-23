@@ -1,4 +1,3 @@
-superadd.js
-===========
+## SuperAdd
 
 Adds arguments together
