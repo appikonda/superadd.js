@@ -35,3 +35,16 @@ function addObjects(firstObject, secondObject){
 
 	return resultObject;
 }
+
+function addObjects(firstObject, secondObject){
+	var resultObject = {};
+	
+	for (var key in firstObject) {
+		resultObject[key] = firstObject[key]
+	}
+	for (var key in secondObject) {
+		resultObject[key] = secondObject[key]
+	}
+
+	return resultObject;
+}
