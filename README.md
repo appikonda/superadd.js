@@ -2,7 +2,7 @@
 
 Adds arguments together
 
-## Documentation
+## Usage
 
 - Object literals
 ```
