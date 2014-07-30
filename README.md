@@ -14,6 +14,16 @@ superAdd(foo, bar);
 // => { x: 1, y: 1 }
 ```
 
+- Numbers
+```
+var one = 1;
+var two = 2;
+
+superAdd(one, two);
+
+// => 3
+```
+
 ## License
 
 The MIT License (MIT)
