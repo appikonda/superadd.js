@@ -1,50 +1,27 @@
-// Copyright 2014 Sandeep Appikonda
+// Copyright (c) 2014 Sandeep Appikonda
 
-function superAdd(firstArg, secondArg){
-   
-   
-   if (typeof(firstArg) === "number")
-   {
-   	  return firstArg + secondArg;
+function superAdd(first, second) {
+   if (typeof first === "number") {
+      return first + second;
+   } else if(typeof first === "string") {
+      return first + " " + second;
+   } else if(Array.isArray(first)) {
+      return first.concat(second);
+   } else {
+      return addObjects(first, second);
    }
-   else if(typeof(firstArg) === "string")
-   {
-   	  return firstArg +" "+ secondArg;
-   }
-   else if( Array.isArray(firstArg) ){
-   	 return  firstArg.concat(secondArg);
-   }
-   else
-   {
-   	  return addObjects(firstArg,secondArg);
-   }
-
-} 
-
-// This function will add two objects and returns the result object
-
-function addObjects(firstObject, secondObject){
-	var resultObject = {};
-	
-	for (var key in firstObject) {
-		resultObject[key] = firstObject[key]
-	}
-	for (var key in secondObject) {
-		resultObject[key] = secondObject[key]
-	}
-
-	return resultObject;
 }
 
-function addObjects(firstObject, secondObject){
-	var resultObject = {};
-	
-	for (var key in firstObject) {
-		resultObject[key] = firstObject[key]
-	}
-	for (var key in secondObject) {
-		resultObject[key] = secondObject[key]
-	}
+function addObjects(firstObject, secondObject) {
+  var resultObject = {};
 
-	return resultObject;
+  for (var key in firstObject) {
+    resultObject[key] = firstObject[key]
+  }
+
+  for (var key in secondObject) {
+    resultObject[key] = secondObject[key]
+  }
+
+  return resultObject;
 }
