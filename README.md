@@ -1,3 +1,5 @@
+<a href="https://codeclimate.com/github/appikonda/superadd.js"><img src="https://codeclimate.com/github/appikonda/superadd.js/badges/gpa.svg" /></a>
+
 ## SuperAdd
 
 Adds arguments together
